@@ -1,8 +1,4 @@
 
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Newsletter from "./components/Newsletter";
 import Hero from "./components/Hero"
 import DiscountSection from "./components/DiscountSection";
 import FirstSection from "./components/FirstSection"
@@ -11,11 +7,11 @@ import RequestSection from "./components/RequestSection";
 import RecommendedSection from "./components/RecommendedSection";
 import ExtraServicesSection from "./components/ExtraServiceSection";
 import Suppliers from "./components/Suppliers";
+import Navbar from "./components/Navbar";
 export default function Home() {
   return (
-    <div className=" max-w-[1440px] h-screen mx-auto bg-[#f7fafc]" >
-      <Header/>
-      <Navbar/>
+    <div className=" max-w-[1440px]  mx-auto bg-[#f7fafc]" >
+       <Navbar/>
       <Hero/>
       <DiscountSection/>
       <FirstSection/>
@@ -23,10 +19,9 @@ export default function Home() {
       <RequestSection/>
       <RecommendedSection/>
       <ExtraServicesSection/>
-      <Suppliers/>
+      <Suppliers/> 
       
-      <Newsletter/>
-      <Footer/>
+      
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 const products = [
     { 
         name: 'Soft Chairs', 
@@ -60,6 +61,7 @@ function ProductsCard() {
                             <p className="text-sm text-gray-500">{product.price}</p>
                         </div>
                         <div className="mt-auto self-end">
+                        <Link href={'/ProductDetail'}>
                             <Image
                                 src={product.image}
                                 alt={product.name}
@@ -67,6 +69,7 @@ function ProductsCard() {
                                 height={70}
                                 className="object-contain"
                             />
+                            </Link>
                         </div>
                     </div>
                 ))}

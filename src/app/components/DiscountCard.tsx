@@ -1,6 +1,6 @@
 
 import Image from 'next/image'  // Importing Image component from Next.js
-
+import Link from 'next/link'
 function DiscountCard() {
 
     // Product data
@@ -21,6 +21,7 @@ function DiscountCard() {
                         className={`flex flex-col items-center justify-center p-4 
                                   ${index !== products.length - 1 ? 'border-r border-gray-200' : ''}`}
                     >
+                         <Link href={'/productsListing'}>
                         <Image
                             src={product.image}    // Use 'product.image' instead of 'products.image'
                             alt={product.name}     // Use 'product.name' instead of 'products.name'
@@ -28,6 +29,7 @@ function DiscountCard() {
                             height={120}           // Set height
                             className="object-contain"   // Optional styling
                         />
+                        </Link>
                         <h3 className="text-[16px] text-gray-600 mt-3">{product.name}</h3>
                         <span className="inline-block px-3 py-1 bg-[#FFE3E3] text-[#EB001B] 
                                      text-[13px] rounded-xl mt-2">

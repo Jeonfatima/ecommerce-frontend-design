@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 const Hero = () => {
   return (
     <div className='flex flex-row items-center gap-4 p-10 mx-auto w-[1180px] h-[400px]  border border-gray-300 bg-white mt-5 '>
@@ -18,13 +19,19 @@ const Hero = () => {
         </div>
 
         <div>
-            
-            <Image
-            src="/images/banner.png"
-            alt='hero'
-            width={665}
-            height={360}
-            />
+        <div 
+                className="w-[665px] h-[360px] border border-gray-200 rounded-lg "
+                style={{ backgroundImage: `url(${'/images/mainbanner.png'})`, backgroundSize: 'cover' }}
+            >
+              <div className='m-10'>
+              <div className='text-3xl'>Latest Trending</div>
+              <div className='text-3xl font-bold'>Electronic items</div>
+          <Link href={'/productsListing'}>
+          <button className="bg-white w-[119px] h-[40px] my-8 cursor-pointer">Learn More</button>
+          </Link>
+
+              </div>
+            </div>
         </div>
 
         <div className="flex flex-col gap-2 items-center mt-2 mb-2 h-[360px]">

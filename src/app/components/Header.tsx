@@ -51,10 +51,12 @@ const Header = () => {
   </div>
 
   {/* My Cart */}
+  <Link href={"/Cart"}>
   <div className="flex flex-col items-center text-gray-500 text-2xl cursor-pointer hover:text-gray-700 transition-colors duration-200">
     <MdShoppingCart />
     <p className="text-sm">Cart</p>
   </div>
+  </Link>
 
 </div>
 
