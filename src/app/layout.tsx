@@ -3,9 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Header from "./components/Header";
-
 import Footer from "./components/Footer";
 import Newsletter from "./components/Newsletter";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -28,14 +28,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
-        <Header/>
-       
-        {children}
-        <Newsletter/>
-        <Footer/>
+        {/* Responsive Wrapper */}
+        <div className="max-w-[1440px] w-full mx-auto px-4">
+          <Header />
+          {children}
+          <Newsletter />
+          <Footer />
+        </div>
       </body>
     </html>
   );
