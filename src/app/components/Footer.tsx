@@ -54,7 +54,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="w-full h-[68px] bg-[#DEE2E7] flex items-center justify-center">
         <div className="max-w-[1440px] w-full flex items-center justify-between px-20">
-          <p className="text-gray-500 text-sm">© 2023 Ecommerce.</p>
+          <p className="text-gray-500 text-sm">© 2023 Ecommerce. |  Developed by Fatima Salman | DHC-1107</p>
           <div className="flex items-center gap-2 cursor-pointer">
             <Image src="/images/icon.png" alt="flag" width={24} height={17} />
             <span className="text-gray-500 text-sm">English</span>
@@ -62,6 +62,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
