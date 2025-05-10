@@ -2,7 +2,10 @@ import React from 'react'
 
 const RequestSection = () => {
   return (
-    <div className='mx-auto w-[1180px] py-10 '>
+    <div>
+
+      {/* laptop */}
+    <div className='mx-auto w-[1180px] py-10 hidden md:block'>
          <div 
                 className="w-[1180px] h-[480px] border border-gray-200 rounded-l-lg flex justify-between"
                 style={{ backgroundImage: `url(${'/images/bannerbg.png'})`, backgroundSize: 'cover' }}
@@ -28,6 +31,29 @@ const RequestSection = () => {
 
 
             </div>
+    </div>
+{/* mobile */}
+<div
+  className="w-full h-full border border-gray-200 rounded-l-lg sm:hidden"
+  style={{ backgroundImage: `url('/images/bannerbg.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+>
+  <div className="flex flex-col items-start justify-start p-6 h-full gap-4">
+    <div className="text-white">
+      <h1 className="text-xl font-semibold leading-snug">
+        An easy way to send <br /> requests to all suppliers
+      </h1>
+    </div>
+
+    <button className="bg-blue-500 text-white rounded-md w-[128px] h-[40px] px-2">
+      Send inquiry
+    </button>
+  </div>
+</div>
+
+
+
+
+
     </div>
   )
 }

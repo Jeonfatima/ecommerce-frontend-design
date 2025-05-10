@@ -35,12 +35,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
       >
         {/* Responsive Wrapper */}
-        <div className="max-w-[1440px] w-full mx-auto px-4">
-          <Header />
-          {children}
-          <Newsletter />
-          <Footer />
-        </div>
+        <div className="min-h-screen flex flex-col items-center bg-[#f7fafc]">
+    <div className="w-full lg:max-w-[1440px] px-4 flex-grow">
+      <Header />
+      {children}
+      <Newsletter />
+      <Footer />
+    </div>
+    </div>
       </body>
     </html>
   );

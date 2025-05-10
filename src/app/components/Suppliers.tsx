@@ -56,9 +56,9 @@ const suppliers = [
 ]
 
   return (
-    <div className='w-[1180px] h-[138px] mx-auto my-20'>
+    <div className='md:w-[1180px] md:h-[138px] mx-auto my-20'>
           <h2 className="text-2xl font-semibold mb-10">Suppliers by region</h2>
-        <div className='grid grid-cols-5 gap-4'>
+        <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4'>
             {suppliers.map((supplier,idx)=>(
                 <div key={idx} className='w-[221px] h-[36px] flex gap-3 justify-start items-center'>
                     

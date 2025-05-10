@@ -14,7 +14,7 @@ function DiscountCard() {
 
     return (
         <div className="flex-1 bg-white border border-gray-200 border-l-0 h-full p-3">
-            <div className="grid grid-cols-5 h-full">
+            <div className="grid grid-cols-2 mg:grid-cols-4 lg:grid-cols-5 h-full">
                 {products.map((product, index) => (
                     <div 
                         key={index} 

@@ -55,9 +55,9 @@ const products = [
 
 function RecommendedSection() {
   return (
-    <div className="w-[1180px] mx-auto p-4">
+    <div className="w-full lg:w-[1180px] mx-auto p-4">
         <div className="text-2xl font-bold mb-5">Recommended Items</div>
-      <div className="grid grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
       {products.map((product, index) => (
         <Card
           key={index}

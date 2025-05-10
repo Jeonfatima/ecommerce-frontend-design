@@ -9,7 +9,7 @@ interface CardProps {
 
 function Card({ price, description, image }: CardProps) {
   return (
-    <div className="flex flex-col gap-1 w-[220px] h-[310px] bg-white p-4 rounded shadow">
+    <div className="flex flex-col gap-1 md:w-[220px] md:h-[310px] bg-white p-4 rounded shadow">
        <Link href={'/ProductDetail'}>
       <Image src={image} alt={description} width={200} height={200} />
       </Link>

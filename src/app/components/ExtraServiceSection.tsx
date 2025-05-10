@@ -27,9 +27,9 @@ function ExtraServicesSection()  {
   ];
 
   return (
-    <section className="p-6 w-[1180px] h-[256px] mx-auto mb-10">
+    <section className="p-6 w-full md:w-[1180px] md:h-[256px] mx-auto mb-10">
       <h2 className="text-2xl font-semibold mb-4">Our extra services</h2>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {services.map((service, index) => (
           <ExtraServiceCard
             key={index}

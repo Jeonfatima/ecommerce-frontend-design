@@ -10,7 +10,7 @@ import Suppliers from "./components/Suppliers";
 import Navbar from "./components/Navbar";
 export default function Home() {
   return (
-    <div className=" max-w-[1440px]  mx-auto bg-[#f7fafc]" >
+    <div className=" w-full max-w-[1440px] mx-auto bg-[#f7fafc]" >
        <Navbar/>
       <Hero/>
       <DiscountSection/>
